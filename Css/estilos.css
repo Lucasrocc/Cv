@@ -33,7 +33,7 @@ section {
     padding: 50px;
     margin: 20px;
   }
-
+/*seleciona un parrafo solo*/
   #Parrafoconidentificacion {
     color: brown;
     font-size: 30px;
@@ -60,3 +60,7 @@ section {
     width: 100px;
     
   }*/
+
+  body {
+    background-color: cadetblue;
+  }
