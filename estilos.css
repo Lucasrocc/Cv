@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+
+    height: 500px;
+}
+
+section#info-personal {
+    background-color: aquamarine;
+
+}
