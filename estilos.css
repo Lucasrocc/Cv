@@ -4,12 +4,78 @@
     padding: 0;
 }
 
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(137, 203, 206, 0.675);
+    font-size: large;
+    font-family:  'Roboto', sans-serif;
+    
+    
+
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+
+}
+
+nav ul li{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    
+    
+
+}
+
+
+
+
+
+
 section {
 
-    height: 500px;
+    height: 100vh;
 }
 
 section#info-personal {
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    background-color: rgb(155, 227, 251);
+
+}
+
+section#info-personal h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+section#info-personal img{
+    border: 8px solid rgba(36, 77, 111, 0.414);
+    border-radius: 20px;
+    border-style: outset;
+    width: 20%;
+}
+
+.datos-personales{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: large;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-left: 100px;
 }
