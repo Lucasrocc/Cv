@@ -17,7 +17,7 @@ document.getElementById("email").addEventListener( "mouseover", function() {
     window.onload = function(){
         document.getElementById("email").onmouseover = function(){document.getElementById("demo").innerHTML = "connor.rivera@example.com"}
         document.getElementById("email").onmouseout = function(){document.getElementById("demo").innerHTML = ""}
-        document.getElementById("fecha").onmouseover = function(){document.getElementById("demo").innerHTML = "4/4/1980"}
+        document.getElementById("fecha").onmouseover = function(){document.getElementById("demo").innerHTML = "4/4/1990"}
         document.getElementById("fecha").onmouseout = function(){document.getElementById("demo").innerHTML = ""}
         document.getElementById("tel").onmouseover = function(){document.getElementById("demo").innerHTML = "(251) 610-6833"}
         document.getElementById("tel").onmouseout = function(){document.getElementById("demo").innerHTML = ""}
