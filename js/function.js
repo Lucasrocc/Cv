@@ -16,7 +16,6 @@ document.addEventListener( "click", function() {
 
 
 document.getElementById("boton").addEventListener( "click", function() {
-    console.log("Hola desde EventListener");
     document.getElementById("demo").innerHTML = "probando primer evento"
 });
 
