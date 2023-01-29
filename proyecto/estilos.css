@@ -145,6 +145,7 @@ section#info-personal img{
     font-family:  'Roboto', sans-serif;
     background: none;
     background-color: rgb(4, 255, 0);
+    
 }
 
 
@@ -163,23 +164,7 @@ section#info-personal img{
 
 
 
-.icon{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-
-.icon span{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 42px;
-    margin-right: 48px;
-    background-color: black;
-}
 .fa-sharp{ 
     color: rgb(37, 208, 239);
     font-size: 50px;
@@ -187,6 +172,7 @@ section#info-personal img{
     cursor: pointer;
     background-color: violet;
     margin-bottom: 0px;
+    padding: 10px 60px 10px 60px;
 
 }
 
@@ -198,3 +184,10 @@ section#info-personal img{
     text-shadow: 1px 1px 10px red;
 }
 
+
+.fecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
