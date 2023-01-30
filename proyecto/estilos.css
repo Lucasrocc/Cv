@@ -213,21 +213,19 @@ section#info-personal img{
     padding: 20px 0;
 
 }
-.Hab .fila{
-    display: flex;
-}
+
+
 .Hab .fila .col{
     width: 50%;
-    padding: 0 20px;
+    padding: 20px 0px 20px 0px;
     margin-top: 70px;
-    margin-left: 200px;
+    
 }
 
 
 .Hab .habilidad > span{
     font-weight: bold;
     display: block;
-    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
 }
 .Hab .habilidad .barra-habilidad{
@@ -235,7 +233,7 @@ section#info-personal img{
     width: 80%;
     background-color: #131517;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .Hab .habilidad .progreso{
     background-color: rgb(37, 208, 239);
@@ -250,7 +248,7 @@ section#info-personal img{
     width: 50px;
     background: linear-gradient(rgb(1, 38, 50), rgb(6, 52, 95), rgb(26, 113, 156));
     border-radius: 50px;
-    line-height: 40px;
+    line-height: 53px;
     text-align: center;
     top: -17px;
     right: -14px;
@@ -304,35 +302,33 @@ section#info-personal img{
 
 /*seccion-habilidades*/
 
-section#experiencia{
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
-    background-color: aliceblue;
+
+.experienciaa h2{
+    color: #fff;
+    font-size: 48px;
+    font-family:  'Roboto', sans-serif;
+    padding: 20px 20px;
 }
 
-.hidden {
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(5px);
-    transform: translateX(-100%);
+
+.ocultos{
+    position: relative;
+    top: 10%;
+    left: -500px;
     
 
-
 }
 
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
+.hidden{    
+    padding: 40px 20px 20px 50px;
 }
 
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-
+.hidden h3{
+    font-family: 'Maven Pro', sans-serif;
+    padding: 10px 10px 10px 10px;
+    color: rgb(37, 208, 239);
+    font-size: 25px;
 }
+
 
 

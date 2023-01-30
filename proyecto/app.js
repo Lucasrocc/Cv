@@ -28,23 +28,25 @@ function efectoHabilidades(){
        habilidades[2].classList.add("photoshop");
        habilidades[3].classList.add("css");
        habilidades[4].classList.add("python");
+
    }
 }
 
-window.onscroll = function(){
-   efectoHabilidades();
-} 
+window.onscroll = () =>{
+    let pos = window.scrollY - 800;
+    hidden.style.left = `${pos}px`
+    efectoHabilidades()
+}
 
 //seccion-Habilidades//
 
-
+/*
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
    console.log(entry)
    if (entry.isIntersecting) {
        entry.target.classList.add("show");
-   } else {
-      entry.target.classList.remove("show");
+  
    }
 
   });
@@ -54,3 +56,12 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll("hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+*/
+
+
+
+
+let hidden = document.querySelector(".ocultos")
+
+
