@@ -1,18 +1,5 @@
 
-
-
-/*
-document.getElementById("email").addEventListener( "mouseover", function() {
-    document.getElementById("demo").innerHTML = "probando primer evento"
-    })
-
-
-
- document.getElementById("fecha").addEventListener( "mouseover", function() {
-    document.getElementById("demo2").innerHTML = "probando ps evento"
-    })
- */  
-  
+//seccion-Datos-personales//
     
     window.onload = function(){
         document.getElementById("email").onmouseover = function(){document.getElementById("demo").innerHTML = "connor.rivera@example.com"}
@@ -24,3 +11,30 @@ document.getElementById("email").addEventListener( "mouseover", function() {
         document.getElementById("dir").onmouseover = function(){document.getElementById("demo").innerHTML = "3640 Thornridge Cir"}
         document.getElementById("dir").onmouseout = function(){document.getElementById("demo").innerHTML = ""}
     }
+
+//seccion-Datos-personales//
+
+
+
+//seccion-Habilidades//
+
+function efectoHabilidades(){
+   var Hab = document.getElementById("Hab");
+   var distancia_Hab = window.innerHeight - Hab.getBoundingClientRect().top;
+   if(distancia_Hab >= 300){
+       let habilidades = document.getElementsByClassName("progreso");
+       habilidades[0].classList.add("javascript");
+       habilidades[1].classList.add("html");
+       habilidades[2].classList.add("photoshop");
+       habilidades[3].classList.add("css");
+       habilidades[4].classList.add("python");
+   }
+}
+
+
+//detecto el scrolling para aplicar la animacion de la barra de habilidades
+window.onscroll = function(){
+   efectoHabilidades();
+} 
+
+//seccion-Habilidades//
