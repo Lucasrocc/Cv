@@ -31,10 +31,26 @@ function efectoHabilidades(){
    }
 }
 
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
    efectoHabilidades();
 } 
 
 //seccion-Habilidades//
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+   console.log(entry)
+   if (entry.isIntersecting) {
+       entry.target.classList.add("show");
+   } else {
+      entry.target.classList.remove("show");
+   }
+
+  });
+   
+}); 
+
+
+const hiddenElements = document.querySelectorAll("hidden");
+hiddenElements.forEach((el) => observer.observe(el));
