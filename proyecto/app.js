@@ -14,9 +14,9 @@
 
 //seccion-Datos-personales//
 
+//habilidades//
 
 
-//seccion-Habilidades//
 
 function efectoHabilidades(){
    var Hab = document.getElementById("Hab");
@@ -32,36 +32,24 @@ function efectoHabilidades(){
    }
 }
 
+//habilidades//
+
+//experiencia//
+
+let hidden = document.querySelector(".ocultos")
+
+//experiencia//
+
+
 window.onscroll = () =>{
-    let pos = window.scrollY - 800;
-    hidden.style.left = `${pos}px`
+    let pos = window.scrollY - 950;
+    hidden.style.right = `${pos}px`
     efectoHabilidades()
 }
 
-//seccion-Habilidades//
-
-/*
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-   console.log(entry)
-   if (entry.isIntersecting) {
-       entry.target.classList.add("show");
-  
-   }
-
-  });
-   
-}); 
-
-
-const hiddenElements = document.querySelectorAll("hidden");
-hiddenElements.forEach((el) => observer.observe(el));
-
-*/
 
 
 
 
-let hidden = document.querySelector(".ocultos")
 
 
